@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Sunny;
+    src: url(../fonts/SunnyspellsRegular-MV9ze.otf);
+}
+
+body{
+    font-family: sunny;
+    height: 100vh;
+    background: linear-gradient(to right, #1cd8d2, #93edc7);
+}
+#pallete1, 
+#pallete2, 
+#pallete3, 
+#pallete4, 
+#pallete5{
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 25vh;
+}
+
+.container h1{
+    font-weight: 100;
+    font-size: 56px;
+}
+
+.container p {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.colorizer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 75vh;
+    align-items: center;
+    font-size: 1.35rem;
+}
+
+.colorizer .color{
+    padding: 100px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-grad{
+    background: linear-gradient(to right, #1cd8d2, #93edc7);
+    font-family: sunny;
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-grad:hover{
+    background-position: right center;
+    color: #000;
+    text-decoration: none;
+}
