@@ -10,16 +10,17 @@ function randomColor(){
 
     palletes.forEach((pallete, i)=>{
         let random = Math.floor(Math.random() * 16777215).toString(16);
-        pallete.innerHTML = '#'+random;
+        pallete.innerHTML = '#' + random;
         colors.push(random);
     })
 
-    let randomizer = {}
+    let randomizer = {};
     colors.forEach((color,i)=>{
-        randomizer[`random${i+1}`] = '#' + color;
+        randomizer[`random${i + 1}`] = "#" + color;
     })
 
-    body.style.background = `linear-gradient(to right, ${randomizer['random1']} 0%, ${randomizer['random1']} 20%,  
+    body.style.background = `linear-gradient(to right, 
+    ${randomizer['random1']} 0%, ${randomizer['random1']} 20%,  
    ${randomizer['random2']} 20%, ${randomizer['random2']} 40%,  
    ${randomizer['random3']} 40%, ${randomizer['random3']} 60%,  
    ${randomizer['random4']} 60%, ${randomizer['random4']} 80%,  
