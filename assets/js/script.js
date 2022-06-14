@@ -1,3 +1,5 @@
+let colorizeBG = document.querySelector('#colorizer1')
+
 function randomColor(){
     let body = document.body;
 
@@ -19,12 +21,16 @@ function randomColor(){
         randomizer[`random${i + 1}`] = "#" + color;
     })
 
-    body.style.background = `linear-gradient(to right, 
-    ${randomizer['random1']} 0%, ${randomizer['random1']} 20%,  
-   ${randomizer['random2']} 20%, ${randomizer['random2']} 40%,  
-   ${randomizer['random3']} 40%, ${randomizer['random3']} 60%,  
-   ${randomizer['random4']} 60%, ${randomizer['random4']} 80%,  
-   ${randomizer['random5']} 80%, ${randomizer['random5']} 100%)`;  
+    backgroundChange(randomizer);   
+}
+
+function backgroundChange(randomizer) {
+    colorizeBG.style.background = `linear-gradient(to right, 
+        ${randomizer['random1']} 0%, ${randomizer['random1']} 20%,  
+        ${randomizer['random2']} 20%, ${randomizer['random2']} 40%,  
+        ${randomizer['random3']} 40%, ${randomizer['random3']} 60%,  
+        ${randomizer['random4']} 60%, ${randomizer['random4']} 80%,  
+        ${randomizer['random5']} 80%, ${randomizer['random5']} 100%)`;  
 }
 
 function copyToClipboard(containerid) {
